@@ -2,160 +2,26 @@
 <html lang="fa">
 <head>
   <meta charset="UTF-8">
-  <title>صدای شاعر | خانه شاعران معاصر</title>
+  <title>صدای شاعر | خانه</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Tahoma', 'Vazir', sans-serif;
-      background: linear-gradient(to right, #ffe5ec, #d0f4de);
-      color: #333;
-      text-align: center;
-      padding: 50px 20px;
-    }
-<style>
-  body {
-    margin: 0;
-    font-family: 'Vazir', sans-serif;
-  }
-
-  nav {
-    background: #6a1b9a;
-    padding: 10px 20px;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .menu-toggle {
-    font-size: 2em;
-    cursor: pointer;
-    display: none;
-  }
-
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 20px;
-  }
-
-  ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-  }
-
-  @media (max-width: 768px) {
-    .menu-toggle {
-      display: block;
-    }
-
-    ul {
-      display: none;
-      flex-direction: column;
-      background: #7e57c2;
-      position: absolute;
-      top: 60px;
-      left: 0;
-      right: 0;
-    }
-
-    ul.active {
-      display: flex;
-    }
-  }
-</style>
-
-<nav>
-  <span class="logo">صدای شاعر</span>
-  <span class="menu-toggle" onclick="toggleMenu()">☰</span>
-  <ul id="mainMenu">
-    <li><a href="index.html">خانه</a></li>
-    <li><a href="signup.html">ثبت‌نام شاعر</a></li>
-    <li><a href="#">گالری اشعار</a></li>
-    <li><a href="#">شاعران</a></li>
-    <li><a href="#">تماس با ما</a></li>
-  </ul>
-</nav>
-
-<script>
-  function toggleMenu() {
-    document.getElementById('mainMenu').classList.toggle('active');
-  }
-</script>
-    header h1 {
-      font-size: 3em;
-      color: #6a1b9a;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 1.2em;
-      color: #444;
-      margin-bottom: 30px;
-    }
-
-    .poet-card {
-      background: #fff;
-      border-radius: 16px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-      padding: 30px;
-      margin: auto;
-      max-width: 600px;
-    }
-
-    .poem {
-      font-size: 1.2em;
-      line-height: 2;
-      color: #5d4037;
-      margin-bottom: 20px;
-    }
-    
-    .btn-3d {
-      background: #ff4081;
-      border: none;
-      color: #fff;
-      padding: 15px 30px;
-      font-size: 1em;
-      border-radius: 30px;
-      box-shadow: 0 8px 0 #c2185b;
-      cursor: pointer;
-      transition: all 0.2s ease-in-out;
-    }
-
-    .btn-3d:active {
-      transform: translateY(8px);
-      box-shadow: none;
-    }
-
-    footer {
-      margin-top: 60px;
-      font-size: 0.9em;
-      color: #777;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
+  <nav class="top-bar">
+    <a href="#" class="back-btn">✖</a>
     <h1>صدای شاعر</h1>
-    <p>خانه‌ی آنلاین شاعران معاصر ایران</p>
-  </header>
+  </nav>
 
-  <div class="poet-card">
-    <div class="poem">
-      الا یا ایها الساقی ادر کأساً و ناولها<br>
-      که عشق آسان نمود اول ولی افتاد مشکل‌ها...
-    </div>
-    <button class="btn-3d" onclick="alert('در آینده به گالری اشعار منتقل می‌شوید')">مرور اشعار بیشتر</button>
+  <div class="main-card">
+    <h2>خانه‌ی شاعران معاصر</h2>
+    <p>شاعر، به خونه‌ی خودت خوش اومدی</p>
+    <a href="signup.html" class="btn-3d">ثبت‌نام شاعر</a>
+    <a href="poets.html" class="btn-3d">شاعران ثبت‌شده</a>
+    <a href="gallery.html" class="btn-3d">گالری اشعار</a>
+    <a href="contact.html" class="btn-3d">تماس با ما</a>
   </div>
-<a href="signup.html" class="btn-3d">ثبت‌نام شاعر</a>
-  <footer>
-    © 1404 |  طراح حسین سبزواری 💖
-  </footer>
 
+  <script src="script.js"></script>
 </body>
-  </html>
+</html>
