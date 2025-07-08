@@ -1,18 +1,36 @@
-<div class="poet-card">
-  <h2>ثبت‌نام شاعر جدید</h2>
-  <form action="#" method="post">
-    <label for="name">نام شاعر:</label><br>
-    <input type="text" id="name" name="name" required><br><br>
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>ثبت‌نام شاعر | صدای شاعر</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <label for="email">ایمیل:</label><br>
-    <input type="email" id="email" name="email" required><br><br>
+  <nav class="top-bar">
+    <a href="index.html" class="back-btn">✖</a>
+    <h1 class="page-title">فرم ثبت‌نام شاعر جدید</h1>
+  </nav>
 
-    <label for="bio">بیوگرافی کوتاه:</label><br>
-    <textarea id="bio" name="bio" rows="4" required></textarea><br><br>
+  <div class="form-card">
+    <form action="#" method="post">
+      <label for="name">نام شاعر:</label>
+      <input type="text" id="name" name="name" required>
 
-    <label for="payment">کد پیگیری پرداخت:</label><br>
-    <input type="text" id="payment" name="payment" required><br><br>
+      <label for="email">ایمیل:</label>
+      <input type="email" id="email" name="email" required>
 
-    <button class="btn-3d">ارسال درخواست عضویت</button>
-  </form>
-</div>
+      <label for="bio">بیوگرافی کوتاه:</label>
+      <textarea id="bio" name="bio" rows="4" required></textarea>
+
+      <label for="payment">کد پیگیری پرداخت:</label>
+      <input type="text" id="payment" name="payment" required>
+
+      <button type="submit" class="btn-3d">ارسال درخواست عضویت</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
