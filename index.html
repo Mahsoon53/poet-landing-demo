@@ -13,7 +13,79 @@
       text-align: center;
       padding: 50px 20px;
     }
+<style>
+  body {
+    margin: 0;
+    font-family: 'Vazir', sans-serif;
+  }
 
+  nav {
+    background: #6a1b9a;
+    padding: 10px 20px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu-toggle {
+    font-size: 2em;
+    cursor: pointer;
+    display: none;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+
+  ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+
+    ul {
+      display: none;
+      flex-direction: column;
+      background: #7e57c2;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+    }
+
+    ul.active {
+      display: flex;
+    }
+  }
+</style>
+
+<nav>
+  <span class="logo">صدای شاعر</span>
+  <span class="menu-toggle" onclick="toggleMenu()">☰</span>
+  <ul id="mainMenu">
+    <li><a href="index.html">خانه</a></li>
+    <li><a href="signup.html">ثبت‌نام شاعر</a></li>
+    <li><a href="#">گالری اشعار</a></li>
+    <li><a href="#">شاعران</a></li>
+    <li><a href="#">تماس با ما</a></li>
+  </ul>
+</nav>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('mainMenu').classList.toggle('active');
+  }
+</script>
     header h1 {
       font-size: 3em;
       color: #6a1b9a;
@@ -41,7 +113,7 @@
       color: #5d4037;
       margin-bottom: 20px;
     }
-
+    
     .btn-3d {
       background: #ff4081;
       border: none;
