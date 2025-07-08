@@ -123,3 +123,55 @@ ul#mainMenu li a {
     display: flex;
   }
   }
+.form-card {
+  background: #fff;
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  text-align: right;
+}
+
+.form-card label {
+  display: block;
+  font-size: 1.1em;
+  margin-top: 20px;
+  color: #6a1b9a;
+}
+
+.form-card input,
+.form-card textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+.form-card .btn-3d {
+  margin-top: 30px;
+  background: #ff4081;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.1em;
+  border-radius: 30px;
+  box-shadow: 0 6px 0 #c2185b;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-card .btn-3d:active {
+  transform: translateY(6px);
+  box-shadow: none;
+}
+
+.page-title {
+  font-size: 1.4em;
+  margin: 0;
+  text-align: right;
+  color: #fff;
+  }
