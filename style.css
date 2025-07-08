@@ -64,3 +64,62 @@ body {
   transform: translateY(6px);
   box-shadow: none;
 }
+nav.top-bar {
+  background: #6a1b9a;
+  color: white;
+  padding: 10px 20px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.menu-toggle {
+  font-size: 2em;
+  cursor: pointer;
+  display: none;
+  background: #ff4081;
+  padding: 5px 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 0 #c2185b;
+}
+
+ul#mainMenu {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+ul#mainMenu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  ul#mainMenu {
+    display: none;
+    flex-direction: column;
+    background: #7e57c2;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    padding: 10px 0;
+  }
+
+  ul#mainMenu.active {
+    display: flex;
+  }
+  }
