@@ -5,3 +5,5 @@ function toggleMenu() {
   const menu = document.getElementById("mainMenu");
   menu.classList.toggle("active");
 }
+console.log("فرم ثبت‌نام شاعر بارگذاری شد.");
+// در مراحل بعدی می‌تونه اعتبارسنجی فرم یا ارسال اطلاعات اضافه بشه
